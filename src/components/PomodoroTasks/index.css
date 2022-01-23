@@ -1,0 +1,20 @@
+
+
+header.task-list-header {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+header.task-list-header button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 0 3px;
+    width: 50px;
+    background: #35dd84;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}

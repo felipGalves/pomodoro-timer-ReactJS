@@ -1,0 +1,58 @@
+div.pomodoro-card {
+    display: flex;
+    margin: 50px 0;
+  }
+  
+  div.pomodoro-card div.pomodoro-component {
+    width: 220px;
+    height: 220px;
+    background: #35dd84;
+    border-radius: 100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  div.pomodoro-card div.pomodoro-component span {
+    color: #FFF;
+    font-size: 28px;
+  }
+  
+  div.pomodoro-card div.pomodoro-sidebar-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  
+    padding-left: 30px;
+  }
+  
+  div.pomodoro-card div.pomodoro-sidebar-options div {
+    display: flex;
+    align-items: center;
+  }
+  
+  div.pomodoro-card div.pomodoro-sidebar-options div h3 {
+    color: #35dd84;
+  }
+  
+  div.pomodoro-card div.pomodoro-sidebar-options div span.pipe {
+    width: 4px;
+    height: 25px;
+    background: #35dd84;
+    border-radius: 2px;
+    margin-right: 5px;
+  }
+  
+  div.pomodoro-card div.pomodoro-sidebar-options button {
+    border: none;
+    background: #35dd84;
+    color: #FFF;
+    width: 100px;
+    padding: 8px 20px;
+    border-radius: 14px;
+    margin: 10px 0;
+    cursor: pointer;
+  }

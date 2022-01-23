@@ -1,0 +1,33 @@
+  
+  section.todo-list ul {
+    list-style: none;
+  }
+  
+  section.todo-list ul li button {
+    border: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 4px;
+    background: none;
+    cursor: pointer;
+
+    transition: .1s;
+  }
+  
+  section.todo-list ul li button:hover {
+    background: rgb(26, 26, 26);
+  }
+
+  section.todo-list ul li button label, input {
+    cursor: pointer;
+  }
+  
+  section.todo-list ul li input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
+  label.checked {
+    text-decoration: line-through;
+  }
