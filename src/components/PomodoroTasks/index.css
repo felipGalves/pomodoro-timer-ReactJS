@@ -3,7 +3,7 @@
 header.task-list-header {
     display: flex;
     justify-content: space-between;
-    width: 200px;
+    width: 100%;
 }
 
 header.task-list-header button {
@@ -12,9 +12,51 @@ header.task-list-header button {
     justify-content: space-around;
 
     padding: 0 3px;
-    width: 50px;
+    width: 100px;
     background: #35dd84;
     border: none;
     border-radius: 2px;
+    cursor: pointer;
+}
+
+/* Pomodoro task list */
+
+ul.pomodoro-task-list {
+    list-style: none;
+    width: 100%;
+    margin: 10px auto;
+}
+
+ul.pomodoro-task-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 8px;
+    background: #182b3c;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+ul.pomodoro-task-list li label.pomodoro-task-title {
+    text-align: left;
+}
+
+ul.pomodoro-task-list li button.edit-button {
+    background: none;
+    border: none;
+}
+
+/* completed task */
+
+.task-completed {
+    text-decoration: line-through;
+}
+
+.task-completed button, input {
+    cursor: initial;
+}
+
+.task-not-completed button, input {
     cursor: pointer;
 }

@@ -1,23 +1,53 @@
-import React, { useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+
+// Selected task
+import { SelectedTaskContext } from '../../providers/selectedTask'
 
 // CSS
 import './index.css'
 
 // Tasks
 const tasksList = [
-    { id: 1, description: 'Develop a frontend app with ReactJS', checked: false },
-    { id: 2, description: 'Develop a backend app with NodeJS', checked: true }
+    { 
+        id: 1, 
+        description: 'Develop a frontend app with ReactJS', 
+        checked: false 
+    },
+    { 
+        id: 2, 
+        description: 'Develop a backend app with NodeJS', 
+        checked: true 
+    }
 ]
 
 export default () => {
-    const [tasks, setTasks] = useState(tasksList)
+    // Tasks
+    const [tasks, setTasks] = useState([])
+
+    // Selected task
+    const [selectedTask, setSelectedTask] = useContext(SelectedTaskContext)
+
+    // Trigger on component mount
+    useEffect(() => {
+        setTasks(tasksList)
+    }, [])
+
+    const handleTaskChange = _ => {
+        // Make a update on firebase task's schema
+    } 
+
+    const handleTaskClicked = task => {
+        setSelectedTask(task)
+    }
 
     return (
         <ul>
-            {tasks.map(task => (
-                <li itemID={task.id}>
-                    <button>
-                        <input type="checkbox" checked={task.checked} />
+            {tasks?.map(task => (
+                <li 
+                    key={task.id}
+                >
+                    <button onClick={handleTaskClicked(task)}>
+                        <input type="checkbox" checked={task.checked} onChange={handleTaskChange} />
                         <label className={task.checked ? 'checked' : ''}>{task.description}</label>
                     </button>
                 </li>

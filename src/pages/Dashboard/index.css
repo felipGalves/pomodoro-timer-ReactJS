@@ -1,0 +1,34 @@
+
+.content-dashboard {
+    width: 100%;
+    background: #182b3c;
+    margin-top: 50px;
+    border-radius: 4px;
+    max-width: 1000px;
+
+    display: flex;
+}
+
+.content-dashboard section {
+  padding: 20px 40px;
+}
+
+.content-dashboard section:nth-child(1) {
+  width: 35%;
+}
+
+.content-dashboard section:nth-child(2) {
+  width: 65%;
+}
+
+/* ToDo List */
+
+section.todo-list h3 {
+    margin-bottom: 15px;
+}
+
+/* Pomodoro timer */
+
+section.pomodoro-container {
+    background: #1e384e;
+}

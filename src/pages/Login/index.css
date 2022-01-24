@@ -1,0 +1,15 @@
+
+.content-login {
+    width: 100%;
+    background: #182b3c;
+    margin-top: 50px;
+    border-radius: 4px;
+    max-width: 450px;
+    padding: 20px;
+
+    display: flex;
+}
+
+.content-login p {
+    font-size: 18px;
+}
