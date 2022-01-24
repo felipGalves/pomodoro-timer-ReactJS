@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 
 // Selected task context
-import { SelectedTaskProvider } from './providers/selectedTask';
+import { SelectedTaskProvider } from './context/SelectedTaskContext';
 
 ReactDOM.render(
   <React.StrictMode>

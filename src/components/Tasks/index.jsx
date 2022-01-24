@@ -1,7 +1,7 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 // Selected task
-import { SelectedTaskContext } from '../../providers/selectedTask'
+import { useSelectedTask } from '../../hooks/useSelectedTask'
 
 // CSS
 import './index.css'
@@ -25,7 +25,7 @@ export default () => {
     const [tasks, setTasks] = useState([])
 
     // Selected task
-    const [selectedTask, setSelectedTask] = useContext(SelectedTaskContext)
+    const [selectedTask, setSelectedTask] = useSelectedTask()
 
     // Trigger on component mount
     useEffect(() => {

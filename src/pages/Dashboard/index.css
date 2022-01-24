@@ -1,34 +1,73 @@
 
 .content-dashboard {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.content-dashboard div.pomodoto-content {
     width: 100%;
     background: #182b3c;
     margin-top: 50px;
     border-radius: 4px;
-    max-width: 1000px;
 
     display: flex;
 }
 
-.content-dashboard section {
+.content-dashboard div.pomodoto-content section {
   padding: 20px 40px;
 }
 
-.content-dashboard section:nth-child(1) {
+.content-dashboard div.pomodoto-content section:nth-child(1) {
   width: 35%;
 }
 
-.content-dashboard section:nth-child(2) {
+.content-dashboard div.pomodoto-content section:nth-child(2) {
   width: 65%;
 }
 
 /* ToDo List */
 
-section.todo-list h3 {
+div.pomodoto-content section.todo-list h3 {
     margin-bottom: 15px;
 }
 
 /* Pomodoro timer */
 
-section.pomodoro-container {
+div.pomodoto-content section.pomodoro-container {
     background: #1e384e;
+}
+
+
+/* Menu */
+
+.content-dashboard div.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 20px;
+  
+  width: 100%;
+  background: #0b141b;
+}
+
+.content-dashboard div.footer-menu div button {
+  cursor: pointer;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #dbdbdb;
+}
+
+.content-dashboard div.footer-menu ul.list-items {
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+}
+
+.content-dashboard div.footer-menu ul.list-items li {
+  margin: 0 10px;
+}
+
+.nav-item-selected button {
+  color: #35dd84 !important;
 }
